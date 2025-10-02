@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #dbeafe, #93c5fd);
+  color: #333;
+}
+header {
+  background: url("../images/header_bg.jpg") no-repeat center/cover;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-bottom: 5px solid #2563eb;
+}
+header h1 {
+  margin: 0;
+  text-shadow: 2px 2px 5px black;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+nav ul li a:hover {
+  color: yellow;
+}
+section {
+  padding: 20px;
+  margin: 20px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border: 10px solid transparent;
+  border-image: url("../images/borde.png") 30 round;
+}
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #2563eb;
+}
+thead {
+  background: #2563eb;
+  color: white;
+}
+ol {
+  background: #e0f2fe;
+  padding: 15px;
+  border-radius: 10px;
+}
+ul {
+  background: #fef9c3;
+  padding: 15px;
+  border-radius: 10px;
+}
+figure img {
+  border-radius: 20px;
+  transition: transform 0.5s, opacity 0.5s;
+}
+figure img:hover {
+  transform: scale(1.1) rotate(3deg);
+  opacity: 0.8;
+}
+video, audio {
+  display: block;
+  margin: 15px auto;
+}
+h2 {
+  color: #1d4ed8;
+  font-size: 1.8em;
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 5px;
+}
+strong { color: #dc2626; }
+em { color: #16a34a; font-style: italic; }
+mark { background: #facc15; padding: 2px; }
+u { text-decoration: underline wavy red; }
+abbr { border-bottom: 2px dotted #9333ea; cursor: help; }
+@keyframes mover {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(20px); }
+  100% { transform: translateX(0); }
+}
+footer p {
+  text-align: center;
+  padding: 15px;
+  background: #1d4ed8;
+  color: white;
+  animation: mover 3s infinite;
+}
